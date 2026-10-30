@@ -18,5 +18,9 @@ createGrid(16);
 const btn = document.querySelector("#size-btn");
 
 btn.addEventListener("click", () => {
-  const size = prompt("Squares per side? (max 100)");
+  const size = Number(prompt("Squares per side? (max 100)"));
+  if (size >= 1 && size <= 100) {
+    container.innerHTML = "";
+    createGrid(size);
+  }
 });
