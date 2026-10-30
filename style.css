@@ -12,3 +12,10 @@ body {
   width: 960px;
   margin: 20px auto;
 }
+.square {
+  aspect-ratio: 1 / 1;
+  border: 1px solid #ccc;
+}
+.colored {
+  background-color: black;
+}
